@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校服展示</title>
+    <!-- 引入Bootstrap和Lightbox -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; }
+        .uniform-section { margin: 20px 0; padding: 15px; background: white; border-radius: 10px; }
+        h2 { color: #2c3e50; font-size: 1.5rem; margin-bottom: 15px; }
+        .carousel-item img { height: 300px; object-fit: cover; }
+        .description { padding: 15px; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<!-- 导航标题 -->
+<div class="container py-3 bg-primary text-white text-center">
+    <h1>学生校服展示</h1>
+</div>
+
+<!-- 夏季校服 -->
+<div class="container mt-3">
+    <div class="uniform-section">
+        <h2>🎽 夏季校服</h2>
+        <div id="summerCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href=" " data-lightbox="summer">
+                        < img src="summer1.jpg" class="d-block w-100" alt="夏季校服正面">
+                    </a >
+                </div>
+                <div class="carousel-item">
+                    <a href="summer2.jpg" data-lightbox="summer">
+                        < img src="summer2.jpg" class="d-block w-100" alt="夏季校服侧面">
+                    </a >
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#summerCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#summerCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        <div class="description">
+            <p>👕 材质：65%棉 + 35%聚酯纤维<br>🌈 颜色：白色+海军蓝<br>💡 特点：透气速干，可机洗</p >
+        </div>
+    </div>
+
+    <!-- 秋季校服（结构同夏季） -->
+    <div class="uniform-section mt-4">
+        <h2>🍂 秋季校服</h2>
+        <div id="autumnCarousel" class="carousel slide">
+            <!-- 轮播图结构同上，替换为秋季图片 -->
+        </div>
+        <div class="description">
+            <p>🧥 材质：羊毛混纺<br>🌈 颜色：深灰色<br>💡 特点：保暖抗皱</p >
+        </div>
+    </div>
+
+    <!-- 冬季校服（结构同夏季） -->
+    <div class="uniform-section mt-4">
+        <h2>⛄ 冬季校服</h2>
+        <div id="winterCarousel" class="carousel slide">
+            <!-- 轮播图结构同上，替换为冬季图片 -->
+        </div>
+        <div class="description">
+            <p>🧣 材质：加厚羽绒内胆<br>🌈 颜色：藏青色<br>💡 特点：防风防水</p >
+        </div>
+    </div>
+</div>
+
+<!-- 引入脚本 -->
+<script src="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+<script>
+    // Lightbox配置
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true,
+        'disableScrolling': true
+    });
+</script>
+</body>
+</html>
